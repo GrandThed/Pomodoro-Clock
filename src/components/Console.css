@@ -1,0 +1,42 @@
+.console-div {
+  display: flex;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 0 0 8px 8px;
+  color: rgb(46, 46, 46);
+}
+
+.adjust-btns {
+  display: flex;
+}
+
+button {
+  margin: 4px;
+  border: none;
+  background-color: rgb(231, 231, 231);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.session, .resting{
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.resting::after{
+    left: 7%;
+    position: absolute;
+    content: "Break Length";
+    top: 0;
+    text-align: center;
+}
+
+.session::after{
+    left: 60%;
+    position: absolute;
+    content: "Session Length";
+    top: 0;
+    text-align: center;
+}
